@@ -1,0 +1,3 @@
+Temperature Monitor: Goes on 2
+
+pH Monitor: Goes on 5
