@@ -22,11 +22,24 @@
 
 \usepackage{wrapfig}
 
+% \useoutertheme{shadow}
+\usepackage[many]{tcolorbox}
+\usepackage{tikz}
+\usetikzlibrary{shadings}
+
 \definecolor{lightblue}{rgb}{.85,.85,1} % 217 217 255
 \definecolor{lightorange}{rgb}{1,.8,.6} % 255 204 153
 \definecolor{lightgreen}{rgb}{.77,.91,.5} % 196 232 128
 \definecolor{lightyellow}{rgb}{1,.98,.6} % 255 250 153
 
+\makeatletter
+\pgfdeclarehorizontalshading{beamer@headfade}{5.4375ex+490pt}
+{%
+  color(0cm)=(lightyellow);
+  color(\paperwidth)=(lightblue)%
+}
+\addtoheadtemplate{\pgfuseshading{beamer@headfade}\vskip\dimexpr -0pt-52ex}{}
+\makeatother
 
 \newsavebox\CBox
 \newenvironment{ColorBox}[3][black]{
@@ -51,9 +64,9 @@
 %\lstset{stringstyle=\color{XcodeStringstyle}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-\title[]{ An Underwater Robotic Smart-Sensing System \\ for Water Quality Testing }
-\author[Wright]{Elisia Wright and Dr. Janyl Jumadinova}
-\institute{Department of Computer Science, Allegheny College \\ Meadville, PA}
+\title[]{An Underwater Robotic Smart-Sensing \\ System for Water Quality Testing }
+\author[Wright]{ Elisia Wright and Dr. Janyl Jumadinova}
+\institute{ Department of Computer Science, Allegheny College \\ Meadville, PA}
 \webpage{cs.allegheny.edu}
 \mail{wrighte@allegheny.edu}
 
@@ -76,24 +89,24 @@
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                 \begin{alertblock}{\textsc{Project Objectives}}
                     \vspace*{6mm}
-                    The current methods for water quality testing either use  a single 	
+                    The current methods for water quality testing either use  a single
                     sensor to get a random sample for testing each water quality 											parameter separately, or data buoys that are able to obtain
-                    readings from multiple sensors at a stationary location. 
+                    readings from multiple sensors at a stationary location.
                     \vspace{3mm}
-                    
+
                     \emph{This project presents:}
                     \begin{itemize}
                         \item A single unit comprised of \textbf{multiple sensors} that are able to collect data simultaneously for water quality testing.
-                        \item This multi-sensor unit attachable to the \textbf{underwater robot} to collect data at various depths of the water column for an extended period of time. 
+                        \item This multi-sensor unit attachable to the \textbf{underwater robot} to collect data at various depths of the water column for an extended period of time.
                         \item \textbf{Data collection} and \textbf{data analysis} software to manage the data and assess certain trends in the water quality over time.
                     \end{itemize}
                     \vspace*{6mm}
                 \end{alertblock}
 			\end{column}
 		\end{columns}
-		
+
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		
+
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		\begin{columns}
 		    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -109,18 +122,18 @@
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                 \begin{block}{\textsc{Algal Blooms}}
                   \vspace*{6mm}
-                       Lake Erie algal blooms are an annual threat to the health of \textbf{more than 11 million people}. Toxins produced by harmful algal blooms have deeply affected the economy and health of the environment and the public. Coastal towns that rely on tourism are negatively affected by toxic algal blooms. 
+                       Lake Erie algal blooms are an annual threat to the health of \textbf{more than 11 million people}. Toxins produced by harmful algal blooms have deeply affected the economy and health of the environment and the public. Coastal towns that rely on tourism are negatively affected by toxic algal blooms.
                   \begin{wrapfigure}{r}{0.5\textwidth}
                     \centering
                         \includegraphics[scale = 0.15]{assets/algalbloom.jpg}
                         \caption{Great Lakes: October 9, 2011}
                   \end{wrapfigure}
-                  
+
 
                 \begin{itemize}
                		\item Drinking water is polluted.
 					\item Local residents and visitors are prevented from boating, swimming, and visiting Lake Erie shorelines.
-					\item Nearby residents are vulnerable to illnesses caused by the toxins. 
+					\item Nearby residents are vulnerable to illnesses caused by the toxins.
 					\item Toxins can result in the death of marine life, and severely impact an aquatic ecosystem.
 				\end{itemize}
                     \vspace*{6mm}
@@ -132,18 +145,18 @@
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                 \begin{block}{\textsc{System Design}}
                     \vspace*{6mm}
-                    
+
                     \begin{enumerate}
     	                \item \textbf{First prototype:}
                     	Extend sensors with 30ft cable, while keeping board and power on surface.
 						\item \textbf{Second prototype:} Create a waterproofed unit to house all sensors and boards on the robot.
-						\begin{itemize}		
+						\begin{itemize}
 							\item Waterproof casing.
 							\item On-board battery.
 							\item Micro-SD card.
 						\end{itemize}
 					\end{enumerate}
-					
+
                     % \begin{figure}
                     %     \includegraphics[scale = 0.15]{assets/IMG_9097.JPG}
                     %     \caption{Soldering wires}
@@ -160,7 +173,7 @@
                     \caption{Soldering sensor wires \hspace{30mm} Drilling holes for sensors}
                     \end{figure}
                     \end{center}
-  
+
                     \vspace*{6mm}
                 \end{block}
             \end{column}
