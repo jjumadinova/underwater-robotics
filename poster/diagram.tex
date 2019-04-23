@@ -1,0 +1,23 @@
+% A descriptive diagram of TikZ tasks
+% Author: Stefan Kottwitz
+% https://www.packtpub.com/hardware-and-creative/latex-cookbook
+\documentclass[border=5pt]{standalone} 
+%%%<
+\usepackage{verbatim}
+%%%>
+\begin{comment}
+:Title: A workflow diagram of project steps
+:Tags: Diagrams;Smartdiagram;Project
+:Author: Janyl Jumadinova
+
+A diagram showing the workflow outlining various project tasks, using the
+smartdiagram package.
+\end{comment}
+\usepackage{smartdiagram}
+\begin{document}
+\smartdiagram[descriptive diagram]{
+  {Sensor System, {Combine muliple inexpensive sensors into a single sensor system using Arduino boards}},
+  {Data Analysis, {Develop software programs to collect data from the sensors at timed intervals, store this data, and analyze it for trends}},
+  {Robot, {Develop an underwater robot using MATES design that can be controlled via remote from the ship}},
+  {Testing, {Evaluate the robot buoyancy and data collection and analysis in the water}}}
+\end{document}

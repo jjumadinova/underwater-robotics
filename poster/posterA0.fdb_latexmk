@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1556058395 "posterA0.tex" "posterA0.pdf" "posterA0" 1556058398
+["pdflatex"] 1556058750 "posterA0.tex" "posterA0.pdf" "posterA0" 1556058753
   "/etc/texmf/web2c/texmf.cnf" 1531237865 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
@@ -275,18 +275,18 @@
   "assets/group_pic.jpg" 1555609404 1030349 bedc9578b02abe725b710492611f98b9 ""
   "assets/sensors.jpg" 1555989898 5682653 4f15f7654d257eaa55f46a5ac809f5d2 ""
   "beamerposter.sty" 1555609404 12774 7a5ac28f0267e419b8d79d049cfca652 ""
-  "beamerthemeMajor.sty" 1556058298 7939 16a522454cb62c5d346d8b2237bb94e0 ""
+  "beamerthemeMajor.sty" 1556058691 8079 c9d5e8d86380f64f5051ae9145276f1e ""
   "logo_right.pdf" 1555609404 184706 db29607d93ae88caa7624196ec73cb5c ""
-  "posterA0.aux" 1556058397 1154 dc470bd84c320292126e2203b2719c83 ""
-  "posterA0.nav" 1556058397 307 9e520c26371a1250ff9fc1fe87f9c655 ""
+  "posterA0.aux" 1556058752 1154 dc470bd84c320292126e2203b2719c83 ""
+  "posterA0.nav" 1556058752 307 9e520c26371a1250ff9fc1fe87f9c655 ""
   "posterA0.out" 1556052151 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "posterA0.tex" 1556058395 8964 72ea059a40d8301b2ef208e2ffc66eb4 ""
+  "posterA0.tex" 1556058748 8964 72ea059a40d8301b2ef208e2ffc66eb4 ""
   "tangocolors.sty" 1555609404 2141 61df698f50c023c26043862485d39f0e ""
   (generated)
+  "posterA0.out"
+  "posterA0.pdf"
   "posterA0.nav"
   "posterA0.aux"
   "posterA0.log"
   "posterA0.snm"
-  "posterA0.pdf"
   "posterA0.toc"
-  "posterA0.out"
