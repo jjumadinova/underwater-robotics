@@ -24,8 +24,10 @@
 \definecolor{tuggreen}{rgb}{0.61,0.73,0.35}
 \definecolor{tugmagenta}{rgb}{0.50,0.39,0.64}
 \definecolor{tugorange}{rgb}{0.97,0.59,0.27}
+\definecolor{gold}{rgb}{1,0.85,0.28}
 
-\setbeamercolor{alerted text}{fg=tugblue}
+\setbeamercolor{alerted text}{fg=tuggreen} %%% NEW
+\setbeamercolor{example text}{fg=tugblue}
 \setbeamercolor*{palette primary}{fg=gray!60!black,bg=gray!30!white}
 \setbeamercolor*{palette secondary}{fg=tugred!70!black,bg=gray!15!white}
 \setbeamercolor*{palette tertiary}{bg=tugred!80!black,fg=gray!10!white}
@@ -38,16 +40,16 @@
 \setbeamercolor*{palette sidebar tertiary}{fg=tugred!50!black}
 \setbeamercolor*{palette sidebar quaternary}{fg=gray!10!white}
 
-%\setbeamercolor*{titlelike}{parent=palette primary}
-\setbeamercolor{titlelike}{parent=pallette primary,fg=gray}
+\setbeamercolor*{titlelike}{parent=palette primary}
+%\setbeamercolor{titlelike}{parent=pallette primary,fg=gray}
 \setbeamercolor{frametitle}{fg=gray,bg=white}
 \setbeamercolor{frametitle right}{bg=gray!60!white}
 
-\setbeamercolor{headline}{bg=gray!15!white}
+\setbeamercolor{headline}{bg=gold!75!blue} %%% TITLE background COLOR
 \setbeamercolor{separation line}{bg=black}
 \setbeamercolor{lower separation line head}{bg=black}
 
-\setbeamercolor{footline}{bg=gray!15!white}
+\setbeamercolor{footline}{bg=gray!10!white}
 
 
 %\setbeamerfont{footline}{size=\large,series=\tt}
@@ -60,13 +62,13 @@
 \setbeamercolor*{separation line}{}
 \setbeamercolor*{fine separation line}{}
 
-\setbeamercolor{block title}{size=\large,series=\bf,use=structure,fg=white,bg=tugblue}
-\setbeamercolor{block title alerted}{size=\large,series=\bf,use=alerted text,fg=white,bg=tugorange}
+\setbeamercolor{block title}{use=structure,fg=white,bg=tugblue}
+\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=tugorange}
 \setbeamercolor{block title example}{use=example text,fg=white,bg=example text.fg!75!black}
 
 \setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!10!bg}
 \setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!30!bg}
-\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!10!bg}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!30!bg} % changed from 10
 
 %\setbeamercolor{itemize item}{fg=tugblue}
 \setbeamercolor{itemize item}{fg=black}
@@ -126,7 +128,7 @@
     \begin{columns}[T]
       \begin{column}{.02\paperwidth}
       \end{column}
-      \begin{column}{.715\paperwidth}
+      \begin{column}{.55\paperwidth}
         \vskip4ex
         \vspace*{6mm}
         \raggedright
@@ -136,13 +138,13 @@
         \vspace*{-5mm}
         \usebeamercolor{institute in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}     
       \end{column}
-      \begin{column}{.25\paperwidth}
+      \begin{column}{.45\paperwidth}
         \vskip1.2cm
         \begin{center}
         \vspace*{-5mm}
         \hspace*{-5cm}
           %\insertlogo
-          \includegraphics[height=8cm]{logo_right}
+          \includegraphics[height=8cm]{logo_right} %Logo_Vert_PRINT}
           %\includegraphics[width=.7\linewidth]{}
         \end{center}
       \end{column}
