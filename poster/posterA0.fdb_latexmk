@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1555992628 "posterA0.tex" "posterA0.pdf" "posterA0" 1555992742
+["pdflatex"] 1555994299 "posterA0.tex" "posterA0.pdf" "posterA0" 1555994299
   "/etc/texmf/web2c/texmf.cnf" 1529944656 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
@@ -221,16 +221,16 @@
   "beamerposter.sty" 1555609404 12774 7a5ac28f0267e419b8d79d049cfca652 ""
   "beamerthemeMajor.sty" 1555609404 7848 fd2a8583b5e38af2d26c597cd186f67f ""
   "logo_right.pdf" 1555609404 184706 db29607d93ae88caa7624196ec73cb5c ""
-  "posterA0.aux" 1555992633 1117 c5bc4692af37dac8a490e1f64a1afe2f ""
-  "posterA0.nav" 1555992633 307 9e520c26371a1250ff9fc1fe87f9c655 ""
+  "posterA0.aux" 1555994296 1117 c5bc4692af37dac8a490e1f64a1afe2f ""
+  "posterA0.nav" 1555994296 307 9e520c26371a1250ff9fc1fe87f9c655 ""
   "posterA0.out" 1555609457 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "posterA0.tex" 1555992742 6257 17762cde719466c10d54014505d639ac ""
+  "posterA0.tex" 1555994298 5899 5a0531b3b6672adfc77baa2a75797a31 ""
   "tangocolors.sty" 1555609404 2141 61df698f50c023c26043862485d39f0e ""
   (generated)
-  "posterA0.nav"
+  "posterA0.snm"
+  "posterA0.out"
   "posterA0.toc"
   "posterA0.aux"
   "posterA0.log"
   "posterA0.pdf"
-  "posterA0.snm"
-  "posterA0.out"
+  "posterA0.nav"
