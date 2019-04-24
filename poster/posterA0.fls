@@ -496,9 +496,9 @@ INPUT assets/algalbloom.jpg
 INPUT ./assets/algalbloom.jpg
 INPUT ./assets/algalbloom.jpg
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm
-INPUT assets/diagram.png
-INPUT ./assets/diagram.png
-INPUT ./assets/diagram.png
+INPUT assets/diagram.jpg
+INPUT ./assets/diagram.jpg
+INPUT ./assets/diagram.jpg
 INPUT assets/IMG_9097.JPG
 INPUT ./assets/IMG_9097.JPG
 INPUT ./assets/IMG_9097.JPG
