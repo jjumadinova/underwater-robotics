@@ -30,14 +30,18 @@
 \definecolor{lightorange}{rgb}{1,.8,.6} % 255 204 153
 \definecolor{lightgreen}{rgb}{.77,.91,.5} % 196 232 128
 \definecolor{lightyellow}{rgb}{1,.98,.6} % 255 250 153
+\definecolor{prussianblue}{rgb}{0.0,0.19,0.33}
+\definecolor{gold}{rgb}{0.6,0.4,0.08}
 
 \makeatletter
 \pgfdeclarehorizontalshading{beamer@headfade}{5.4375ex+490pt}
 {%
-  color(0cm)=(lightyellow);
-  color(\paperwidth)=(lightblue)%
+  color(0cm)=(lightblue);
+  % color(15cm)=(lightblue);
+  color(45cm)=(lightyellow);
+  color(\paperwidth)=(gold)%
 }
-\addtoheadtemplate{\pgfuseshading{beamer@headfade}\vskip\dimexpr -0pt-52ex}{}
+\addtoheadtemplate{\pgfuseshading{beamer@headfade}\vskip\dimexpr 0pt-52ex}{}
 \makeatother
 
 
@@ -162,6 +166,7 @@
                     		\includegraphics[scale = 4]{assets/diagram.jpg}
                     	\caption{Different portions comprising the system}
                     	\end{figure}
+                \end{alertblock}
 
   					\begin{block}{\textsc{\textbf{Sensor System Prototypes}}}
                     \begin{enumerate}
@@ -193,7 +198,6 @@
                     \end{center}
 
   					\end{block}
-                \end{alertblock}
             \end{column}
 
             %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
