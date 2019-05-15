@@ -1,0 +1,218 @@
+% This style is based on the style written by Martin Weiglhofer (TU Graz)
+
+\ProvidesPackage{beamerthemeMajor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{tangocolors}
+%\selectcolormodel{cmyk}
+\selectcolormodel{rgb}
+\mode<presentation>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\webpage{\setbeamertemplate{webpage}}
+\def\insertwebpage{\usebeamertemplate*{webpage}}
+
+\def\mail{\setbeamertemplate{mail}}
+\def\insertmail{\usebeamertemplate*{mail}}
+
+\def\sublogo{\setbeamertemplate{sublogo}}
+\def\insertsublogo{\usebeamertemplate*{sublogo}}
+
+\definecolor{tugred}{rgb}{1.0,0.04,0.43}
+\definecolor{lightblue}{rgb}{.85,.85,40}
+\definecolor{lightgreen}{rgb}{.77,.91,.5}%0.61,0.73,0.35}example
+\definecolor{tugmagenta}{rgb}{0.50,0.39,0.64}
+\definecolor{lightyellow}{rgb}{1,.98,.6}
+\definecolor{gold}{rgb}{0.6,0.4,0.08}
+\definecolor{prussianblue}{rgb}{0.0,0.19,0.33}
+
+\setbeamercolor{alerted text}{fg=prussianblue} %%% NEW
+\setbeamercolor{example text}{fg=lightgreen}
+\setbeamercolor*{palette primary}{fg=gray!60!black,bg=gray!30!white}
+\setbeamercolor*{palette secondary}{fg=tugred!70!black,bg=gray!15!white}
+\setbeamercolor*{palette tertiary}{bg=tugred!80!black,fg=gray!10!white}
+\setbeamercolor*{palette quaternary}{fg=tugred,bg=gray!5!white}
+
+\setbeamercolor*{sidebar}{fg=tugred,bg=gray!15!white}
+
+\setbeamercolor*{palette sidebar primary}{fg=tugred!10!black}
+\setbeamercolor*{palette sidebar secondary}{fg=white}
+\setbeamercolor*{palette sidebar tertiary}{fg=tugred!50!black}
+\setbeamercolor*{palette sidebar quaternary}{fg=gray!10!white}
+
+\setbeamercolor*{titlelike}{parent=palette primary}
+%\setbeamercolor{titlelike}{parent=pallette primary,fg=gray}
+\setbeamercolor{frametitle}{fg=gray,bg=white}
+\setbeamercolor{frametitle right}{bg=gray!60!white}
+
+\setbeamercolor{headline}{bg=} %%% TITLE background COLOR
+\setbeamercolor{separation line}{bg=black}
+\setbeamercolor{lower separation line head}{bg=black}
+
+\setbeamercolor{footline}{bg=gray!10!white}
+
+
+%\setbeamerfont{footline}{size=\large,series=\tt}
+
+\setbeamerfont{footline}{size=\small}
+
+\setbeamercolor{upper separation line foot}{bg=black}
+\setbeamercolor{lower separation line foot}{bg=black}
+
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+
+\setbeamercolor{block title}{use=structure,fg=prussianblue,bg=lightblue}
+\setbeamercolor{block title alerted}{use=alerted text,fg=gold,bg=lightyellow}
+\setbeamercolor{block title example}{use=example text,fg=white,bg=lightgreen}
+
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!10!bg}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!30!bg}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!10!bg} % changed from 10 size=\large,series=\bf
+
+%\setbeamercolor{itemize item}{fg=tugblue}
+\setbeamercolor{itemize item}{fg=black}
+\setbeamercolor{enumerate item}{fg=black}
+%\setbeamercolor{itemize subitem}{fg=tugblue}
+%\setbeamercolor{itemize subsubitem}{fg=tugblue}
+
+%\setbeamercolor{section/subsection in toc}{fg=tugblue}
+\setbeamercolor{section in toc}{fg=black,bg=white}
+\setbeamercolor{subsection in toc}{fg=black,bg=white}
+
+\setbeamercolor{structure}{fg=lightblue}
+\setbeamertemplate{navigation symbols}{}  % no navigation on a poster
+%\setbeamertemplate{items}[square]
+
+%\setbeamertemplate{bibliography item}[square]
+\setbeamertemplate{bibliography item}[text]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{block begin}{
+  \vskip.75ex
+  \begin{beamercolorbox}[rounded=true,shadow=true,leftskip=1cm,colsep*=.75ex]{block title}%
+    \usebeamerfont*{block title}\insertblocktitle
+  \end{beamercolorbox}%
+  {\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
+  \usebeamerfont{block body}%
+%  \begin{beamercolorbox}[rounded=true,shadow=true,colsep*=.75ex,sep=.75ex,vmode]{block body}%
+  \begin{beamercolorbox}[rounded=true,shadow=true,vmode]{block body}%
+    \ifbeamercolorempty[bg]{block body}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
+  }
+  \setbeamertemplate{block end}{
+  \end{beamercolorbox}
+}
+
+\setbeamertemplate{block alerted begin}{
+  \vskip.75ex
+  \begin{beamercolorbox}[rounded=true,shadow=true,leftskip=1cm,colsep*=.75ex]{block title alerted}%
+    \usebeamerfont*{block title alerted}\insertblocktitle
+  \end{beamercolorbox}%
+  {\ifbeamercolorempty[bg]{block alerted body}{}{\nointerlineskip\vskip-0.5pt}}%
+  \usebeamerfont{block body alerted}%
+%  \begin{beamercolorbox}[rounded=true,shadow=true,colsep*=.75ex,sep=.75ex,vmode]{block body alerted}%
+  \begin{beamercolorbox}[rounded=true,shadow=true,vmode]{block body alerted}%
+    \ifbeamercolorempty[bg]{block body alerted}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
+  }
+
+\setbeamertemplate{block alerted end}{
+  \end{beamercolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{headline}{
+  \leavevmode
+
+  \begin{beamercolorbox}[wd=\paperwidth]{headline}
+    \begin{columns}[T]
+      \begin{column}{.02\paperwidth}
+      \end{column}
+      \begin{column}{.55\paperwidth}
+        \vskip4ex
+        \vspace*{6mm}
+        \raggedright
+        \frenchspacing
+        %\centering
+        \usebeamercolor{title in headline}{\color{fg}\textbf{\LARGE{\inserttitle}}\\[1ex]}
+        \vspace{5mm}
+        \usebeamercolor{author in headline}{\color{fg}\large{\insertauthor}\\[1ex]}
+        \vspace*{-5mm}
+        \usebeamercolor{institute in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}
+      \end{column}
+      \begin{column}{.45\paperwidth}
+        \vskip1.2cm
+        \begin{center}
+        \vspace*{-5mm}
+        \hspace*{-5cm}
+          %\insertlogo
+          \includegraphics[height=8cm]{logo_right} %Logo_Vert_PRINT}
+          \large{{\tt https://www.cs.allegheny.edu}} \\
+          \large{{\tt wrighte@allegheny.edu}}
+          %\includegraphics[width=.7\linewidth]{}
+        \end{center}
+      \end{column}
+      \begin{column}{.03\paperwidth}
+      \end{column}
+    \end{columns}
+    \vskip1.2cm
+  \end{beamercolorbox}
+
+  \begin{beamercolorbox}[wd=\paperwidth]{lower separation line head}
+%    \rule{0pt}{2pt}
+  \end{beamercolorbox}
+  \vspace*{1.1cm}
+}
+
+%  \setbeamertemplate{headline}{
+%    \leavevmode
+%    \begin{beamercolorbox}[sep=0.5cm,wd=.8\paperwidth]{headline}
+%      \usebeamercolor{title in headline}{\raggedleft\color{fg}\textbf{\LARGE{\inserttitle}}\\[1ex]}
+%      \usebeamercolor{author in headline}{\raggedleft\color{fg}\large{\insertauthor}\\[1ex]}
+%      \usebeamercolor{institute in headline}{\raggedleft\color{fg}\large{\insertinstitute}\\[1ex]}
+%    \end{beamercolorbox}%
+%    \begin{beamercolorbox}[wd=.2\paperwidth]{logo in headline}
+%      \centering
+%      \LARGE{LOGO}
+%    \end{beamercolorbox}
+
+
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\setbeamertemplate{footline}{
+%  \begin{beamercolorbox}[wd=\paperwidth]{upper separation line foot}
+%    \rule{0pt}{2pt}
+%  \end{beamercolorbox}
+
+%  \leavevmode%
+%  \begin{beamercolorbox}[ht=4ex,leftskip=1cm,rightskip=1cm]{author in head/foot}%
+%  	\vspace*{-2mm}
+%	\phantom{{\tt rene.just@uni-ulm.de}}
+%    \hfill
+%    \large{\vspace*{-2.5mm}\insertdate}
+%    \hfill
+%	\normalsize{{\tt wrighte@allegheny.edu}}
+%    \vskip1ex
+%  \end{beamercolorbox}
+%  \vskip0pt%
+%  \begin{beamercolorbox}[wd=\paperwidth]{lower separation line foot}
+%    \rule{0pt}{2pt}
+%  \end{beamercolorbox}
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Display a grid to help align images ... and it looks nice with this color scheme
+%\beamertemplategridbackground[1cm]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mode<all>
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-PDF-mode: t
+%%% TeX-master: "poster"
+%%% End:
