@@ -14,7 +14,7 @@
 %  \usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
 \usepackage[font=normalsize,labelfont=small,bf,margin=2cm]{caption}
 \usepackage[latin1]{inputenc}
-\usepackage[orientation=landscape,size=a0,scale=1.4,debug]{beamerposter}
+\usepackage[orientation=landscape,size=a0,scale=1.6,debug]{beamerposter}
 \usepackage{color,listings}
 \usepackage{calc,xcolor}
 \usepackage[absolute,overlay]{textpos}
@@ -68,9 +68,10 @@
 %\lstset{stringstyle=\color{XcodeStringstyle}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-\title[]{An Underwater Robotic Smart-Sensing System for Water Quality Testing }
+\title[]{Underwater Robotic Unit with Smart Sensing  \\ Technology
+  for Water Quality Testing }
 \author[Wright]{Elisia Wright, David Boughton and Dr. Janyl Jumadinova}
-\institute{Department of Computer Science, Allegheny College \\ Meadville, PA}
+\institute{Department of Computer Science \\ Allegheny College, Meadville, PA}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 \begin{document}
@@ -90,12 +91,12 @@
                 %
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                 \begin{alertblock}{\textsc{\textbf{Project Objectives}}}
-                    \vspace*{3mm}
+                    \vspace*{2mm}
                     The current methods for water quality testing either use a
-                    single sensor to get a  sample for testing each water
-                    quality parameter or data buoys that are able to
+                    single sensor to get a random sample for testing each water
+                    quality	parameter separately, or data buoys that are able to
                     obtain readings from multiple sensors at a stationary location.
-                    \vspace{3mm}
+                    \vspace{2mm}
 
                     \emph{This project presents:}
                     \begin{itemize}
@@ -128,28 +129,19 @@
                 %
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                 \begin{block}{\textsc{\textbf{Algal Blooms}}}
-                  \vspace*{3mm}
-                       Lake Erie algal blooms are an annual threat to the health
-                       of \textbf{more than 11 million people}. Toxins produced
-                       by harmful algal blooms  deeply affected the economy
-                       and health of the environment and the public. %Coastal towns
-                       %that rely on tourism are negatively affected by toxic algal
-                      % blooms.
-                  \begin{wrapfigure}{r}{0.45\textwidth}
+                  \vspace*{2mm}
+                       
+                  \begin{wrapfigure}{r}{0.5\textwidth}
                     \centering
-                        \includegraphics[scale = 0.12]{assets/algalbloom.jpg}
-                        \caption{Great Lakes: October 9, 2011}
+                        \includegraphics[scale = 0.11]{assets/algalbloom.jpg}
+                        \caption{Great Lakes: Oct. 2011}
                   \end{wrapfigure}
-
-                \begin{itemize}
-               		\item Drinking water is polluted.
-					\item Local residents and visitors are prevented from boating, swimming,
-          and visiting Lake Erie shorelines.
-					%\item Nearby residents are vulnerable to illnesses caused by the toxins.
-					\item Toxins can result in the death of marine life, and severely impact
-          an aquatic ecosystem.
-				\end{itemize}
-                    \vspace*{3mm}
+ Lake Erie algal blooms are an annual threat to the health
+                       of \textbf{more than 11 million people}. Toxins produced
+                       by harmful algal blooms  deeply affected the economy of the coastal towns
+                       and the health of the environment and the public.
+                       
+                    \vspace*{2mm}
                 \end{block}
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                 %
@@ -158,7 +150,7 @@
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                 \begin{alertblock}{\textsc{\textbf{System Design}}}
 					   \begin{figure}
-                    		\includegraphics[scale = 3.5]{assets/diagram.jpg}
+                    		\includegraphics[scale = 3.7]{assets/diagram.jpg}
                     	\caption{Different portions comprising the system}
                     	\end{figure}
                 \end{alertblock}
@@ -169,54 +161,69 @@
             % Center column 
             %
             %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-            \begin{column}{.33\linewidth}
+            \begin{column}{.34\linewidth}
                  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                 %
                 % Sensors
                 %
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                \begin{block}{\textsc{\textbf{Sensors}}}
-                    \vspace*{3mm}
+                \begin{alertblock}{\textsc{\textbf{Robotic and Sensor System}}}
+                    \vspace*{2mm}
 
-                   In our system we used a collection of sensors, Arduino boards, and programs.
+                   Our system includes a robotic unit, a collection of sensors, Arduino boards, and  programs.
                     \begin{itemize}
-                    	\item pH, conductivity, temperature, dissolved oxygen sensors
-                      were used.
-                    	\item These sensors are all connected to an Arduino board
-                      for automatic data collection and analysis.
-                     	\item Waterproofed sensors on this robotic system allows for
-                      data to be collected for several hours at a time, which is
-                      then transmitted to the analytics software.
-                     \end{itemize}
-
-                    \vspace*{3mm}
-                \end{block}
-                  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                %
-                % Robot
-                %
-                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  				\begin{block}{\textsc{\textbf{Robotic and Sensor System}}}
-                    \begin{itemize}
-                    			\item A \textbf{waterproofed case} was designed to house sensors and boards on the robot.
-							\item A remotely operated \textbf{robotic platform} was constructed with PVC pipe,
+                    	%\item Sensors are all connected to an Arduino board
+                      %for automatic data collection and analysis.
+                    	\item A \textbf{waterproofed case} was designed to house sensors and boards on the robot.
+						\item A remotely operated \textbf{robotic unit} was constructed with PVC pipe,
                       mesh, propellers, solder, and other materials, and is easily
                       deconstructable.
+                     %	\item Waterproofed sensors on this robotic system allows for
+                     % data to be collected for several hours at a time, which is
+                     % then transmitted to the analytics software.
 				 \end{itemize}
 				
                     \begin{center}
                     \begin{figure}
                     \begin{tabular}{cc}
-                    \includegraphics[scale = 0.15]{assets/IMG_9097.JPG}
+                    \includegraphics[scale = 0.16]{assets/robot1}
                     \hspace*{5mm}
                     &
-                    \includegraphics[scale = 0.42]{assets/meworking1}
+                    \includegraphics[scale = 0.39]{assets/meworking1}
                     \end{tabular}
-                    \caption{Soldering sensor wires \hspace{30mm} Drilling holes for sensors}
+                    \caption{Detached system \hspace{30mm} Drilling holes for sensors}
                     \end{figure}
                     \end{center}
 
-  				\end{block}
+  				\end{alertblock}
+  				
+  				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                %
+                % Testing
+                %
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                \begin{block}{\textsc{\textbf{Testing}}}
+                    \vspace*{2mm}
+                    %\begin{itemize}
+                    	%\item 
+                    	The robotic system was initially tested in the pool for buoyancy and general operation validation.
+                    	%\item All sensors were calibrated and also tested individually.
+                    	\vspace{-0.5in}
+                    	\begin{center}
+                    	\begin{tabular}{l|l}
+                    	\textbf{Sensors} & \textbf{Testing Values} \\
+                    	\hline 
+                    	Temperature & 40F - 70F \\
+                    	pH & Standard Buffer Solutions 4.0 and 7.0 \\
+                    	Dissolved Oxygen & 0.5 mol/L NaOH Solution \\
+                    								%&  (Sodium Hydroxide) \\
+                    	Conductivity &  Buffer Solutions 1413us/cm and 12.88ms/cm 
+                    	\end{tabular}
+                    	\end{center}
+                     %\end{itemize}
+
+                   % \vspace*{3mm}
+                \end{block}
 
             \end{column}
             %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -231,27 +238,27 @@
                 % Testing
                 %
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                \begin{block}{\textsc{\textbf{Testing}}}
-                    \vspace*{3mm}
+                \begin{block}{\textsc{\textbf{Data Analysis}}}
+                    \vspace*{-15mm}
 
-                    To complete our sensor system we used a collection of sensors,
-                    Arduino boards, and programs.
+                    \begin{center}
+                    \begin{figure}
+                    \begin{tabular}{cc}
+                    \includegraphics[scale = 1.3]{assets/plot1}
+                    \hspace*{-15mm}
+                    &
+                    \hspace*{-15mm}
+                    \includegraphics[scale = 1.3]{assets/plot3}
+                    \end{tabular}
+                    \caption{Distribution  \hspace{80mm} Relationship \\ of the sensor data collected in Lake Erie}
+                    \end{figure}
+                    \end{center}
                     \begin{itemize}
-                    	\item The robotic system was initially tested in the pool for buoyancy and general operation validation.
-                    	\item All sensors were calibrated and also tested individually.
-                    	\begin{center}
-                    	\begin{tabular}{l|l}
-                    	\textbf{Sensors} & \textbf{Testing Values} \\
-                    	\hline 
-                    	Temperature & 40F - 70F \\
-                    	pH & Standard Buffer Solutions 4.0 and 7.0 \\
-                    	Dissolved Oxygen & 0.5 mol/L NaOH Solution \\
-                    								&  (Sodium Hydroxide) \\
-                    	Conductivity & Standard Buffer Solutions \\
-                    								& 1413us/cm and 12.88ms/cm 
-                    	\end{tabular}
-                    	\end{center}
-                     \end{itemize}
+                    	%\item Data analysis software was written in Python and includes machine learning algorithms to aggregate, learn and predict trends in the collected data.
+                    	\item Statistical analysis of the collected data is first performed.
+                    	\item Time series \textbf{forecasting} is used to predict future trends in the water quality.
+                    	\item K-means \textbf{Clustering} is applied to learn relationships between water quality sensor measurements.   
+                    \end{itemize}
 
                     \vspace*{3mm}
                 \end{block}
@@ -261,21 +268,16 @@
                 % Results
                 %
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                \begin{alertblock}{\textsc{\textbf{Testing and Future Work}}}
+                \begin{alertblock}{\textsc{\textbf{Future Work}}}
                     \vspace*{3mm}
-                    \begin{itemize}
-                    	\item First, software and the sensor data collection,
-                      management and analysis were evaluated.
-                    	\item Then, completed robotic system was tested in the pool
-                      water.
-                    	\item In June, measurements from Lake Erie will be taken at
+                    \begin{enumerate}
+                    	\item Over a period of this summer, measurements from Lake Erie will be taken at
                       different levels of the water column.
-                    	\item The results of this project, including the collected
-                      data and its analysis, will be shared with other researchers
-                      and will be used to help students understand variations in
-                      water quality measurements.
+                    	\item The results of this work, including collected data and its analysis will be shared with other researchers.
+                      	\item Data analysis algorithms will be enhanced and automated with the data collection workflow.
+                      	\item Autonomous robotic unit will be designed. 
                     	%\item The data retrieved can be used to protect coastal environments and surrounding communities.
-                    \end{itemize}
+                    \end{enumerate}
 
                     \vspace*{3mm}
                 \end{alertblock}
