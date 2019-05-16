@@ -170,11 +170,38 @@
             %
             %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
             \begin{column}{.33\linewidth}
-  				\begin{block}{\textsc{\textbf{Sensor System}}}
+                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                %
+                % Sensors
+                %
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                \begin{block}{\textsc{\textbf{Sensors}}}
+                    \vspace*{3mm}
+
+                   In our system we used a collection of sensors, Arduino boards, and programs.
                     \begin{itemize}
-							\item Waterproof casing.
-							\item On-board battery.
-							\item Micro-SD card.
+                    	\item pH, conductivity, temperature, dissolved oxygen sensors
+                      were used.
+                    	\item These sensors are all connected to an Arduino board
+                      for automatic data collection and analysis.
+                     	\item Waterproofed sensors on this robotic system allows for
+                      data to be collected for several hours at a time, which is
+                      then transmitted to the analytics software.
+                     \end{itemize}
+
+                    \vspace*{3mm}
+                \end{block}
+                  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                %
+                % Robot
+                %
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  				\begin{block}{\textsc{\textbf{Robotic and Sensor System}}}
+                    \begin{itemize}
+                    			\item A \textbf{waterproofed case} was designed to house sensors and boards on the robot.
+							\item A remotely operated \textbf{robotic platform} was constructed with PVC pipe,
+                      mesh, propellers, solder, and other materials, and is easily
+                      deconstructable.
 				 \end{itemize}
 				
                     \begin{center}
@@ -191,28 +218,6 @@
 
   				\end{block}
 
-                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                %
-                % Robot
-                %
-                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                \begin{block}{\textsc{\textbf{Robotic Platform}}}
-                    \vspace*{3mm}
-                    \begin{figure}
-                    \centering
-                        \includegraphics[scale = 0.5]{assets/group_pic.jpg}
-                        \caption{Robot Model}
-                    \end{figure}
-
-                    \begin{itemize}
-                    	\item A remotely operated robotic platform are constructed with PVC pipe,
-                      mesh, propellers, solder, and other materials, and are easily
-                      deconstructable.
-                    \end{itemize}
-
-                    \vspace*{3mm}
-                \end{block}
-
             \end{column}
             %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
             %
@@ -223,27 +228,29 @@
 
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                 %
-                % Sensors
+                % Testing
                 %
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                \begin{block}{\textsc{\textbf{Sensors}}}
+                \begin{block}{\textsc{\textbf{Testing}}}
                     \vspace*{3mm}
 
-                    \begin{wrapfigure}{l}{0.47\textwidth}
-                        \centering
-                        \includegraphics[width=0.35\textwidth]{assets/sensors.jpg}
-                        \caption{Arduino board and sensors}
-                    \end{wrapfigure}
                     To complete our sensor system we used a collection of sensors,
                     Arduino boards, and programs.
                     \begin{itemize}
-                    	\item pH, conductivity, temperature, dissolved oxygen sensors
-                      were used.
-                    	\item These sensors are all connected to an Arduino board
-                      for automatic data collection and analysis.
-                     	\item Waterproofed sensors on this robotic system allows for
-                      data to be collected for several hours at a time, which is
-                      then transmitted to the analytics software.
+                    	\item The robotic system was initially tested in the pool for buoyancy and general operation validation.
+                    	\item All sensors were calibrated and also tested individually.
+                    	\begin{center}
+                    	\begin{tabular}{l|l}
+                    	\textbf{Sensors} & \textbf{Testing Values} \\
+                    	\hline 
+                    	Temperature & 40F - 70F \\
+                    	pH & Standard Buffer Solutions 4.0 and 7.0 \\
+                    	Dissolved Oxygen & 0.5 mol/L NaOH Solution \\
+                    								&  (Sodium Hydroxide) \\
+                    	Conductivity & Standard Buffer Solutions \\
+                    								& 1413us/cm and 12.88ms/cm 
+                    	\end{tabular}
+                    	\end{center}
                      \end{itemize}
 
                     \vspace*{3mm}
@@ -261,7 +268,7 @@
                       management and analysis were evaluated.
                     	\item Then, completed robotic system was tested in the pool
                       water.
-                    	\item In May, measurements from Lake Erie will be taken at
+                    	\item In June, measurements from Lake Erie will be taken at
                       different levels of the water column.
                     	\item The results of this project, including the collected
                       data and its analysis, will be shared with other researchers
