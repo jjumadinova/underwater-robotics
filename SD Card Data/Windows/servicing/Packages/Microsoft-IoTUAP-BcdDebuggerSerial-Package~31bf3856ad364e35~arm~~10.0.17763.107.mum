@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v3">
+  <assemblyIdentity name="Microsoft-IoTUAP-BcdDebuggerSerial-Package" version="10.0.17763.107" processorArchitecture="arm" language="neutral" publicKeyToken="31bf3856ad364e35" buildType="release" />
+  <package identifier="Microsoft-IoTUAP-BcdDebuggerSerial-Package" releaseType="Feature Pack" binaryPartition="false" targetPartition="EFIESP">
+    <customInformation>
+      <phoneInformation phoneRelease="Test" phoneOwner="Microsoft" phoneOwnerType="Microsoft" phoneComponent="IoTUAP.BcdDebuggerSerial" phoneSubComponent="" phoneGroupingKey="" />
+      <file name="update.mum" size="844" staged="643" compressed="643" sourcePackage="" cabpath="update.mum" />
+      <file name="$(runtime.system32)\catroot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\update.cat" size="937" staged="729" compressed="729" sourcePackage="" cabpath="update.cat" />
+      <file name="arm_microsoft-iotuap-bc..erserial-deployment_31bf3856ad364e35_10.0.17763.107_none_6a4d11de46747ecc.manifest" size="843" staged="627" compressed="627" sourcePackage="Microsoft-IoTUAP-BcdDebuggerSerial-Package" cabpath="arm_microsoft-iotuap-bc..erserial-deployment_31bf3856ad364e35_10.0.17763.107_none_6a4d11de46747ecc.manifest" />
+      <file name="arm_microsoft-iotuap-bcddebuggerserial_31bf3856ad364e35_10.0.17763.107_none_28e69534f0ea9334.manifest" size="1401" staged="741" compressed="741" sourcePackage="Microsoft-IoTUAP-BcdDebuggerSerial-Package" cabpath="arm_microsoft-iotuap-bcddebuggerserial_31bf3856ad364e35_10.0.17763.107_none_28e69534f0ea9334.manifest" />
+    </customInformation>
+    <update name="6c8e3dd9e107a00646a036c53acbed11">
+      <component>
+        <assemblyIdentity name="Microsoft-IoTUAP-BcdDebuggerSerial-Deployment" version="10.0.17763.107" processorArchitecture="arm" language="neutral" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+  </package>
+</assembly>

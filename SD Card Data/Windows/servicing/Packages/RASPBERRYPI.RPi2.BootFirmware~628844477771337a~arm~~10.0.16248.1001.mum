@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" displayName="default" company="Microsoft Corporation" copyright="Microsoft Corporation">
+  <assemblyIdentity name="RASPBERRYPI.RPi2.BootFirmware" version="10.0.16248.1001" language="neutral" processorArchitecture="arm" publicKeyToken="628844477771337a" buildType="release" />
+  <package identifier="RASPBERRYPI.RPi2.BootFirmware" releaseType="Update" restart="possible" targetPartition="EFIESP" binaryPartition="false" >
+    <customInformation>
+      <phoneInformation phoneRelease="Production" phoneOwnerType="OEM" phoneOwner="RASPBERRYPI" phoneComponent="RPi2" phoneSubComponent="BootFirmware" phoneGroupingKey=""/>
+      <file name="\update.mum" size="0" staged="0" compressed="0" cabpath="update.mum"/>
+      <file name="\Windows\System32\catroot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\update.cat" size="9746" staged="9746" compressed="9746" cabpath="update.cat"/>
+      <file name="$(runtime.bootdrive)\bootcode.bin" size="17920" staged="10694" compressed="10694" cabpath="arm_raspberrypi.rpi2.bootfirmware0_628844477771337a_10.0.16248.1001_none_a0e75e52b17ff84a\bootcode.bin" hash="6C5EEA9ED8FBDB1FBEBD32C543BC4F94E43B06154D665B03A34164903478A9DE"/>
+      <file name="$(runtime.bootdrive)\config.txt" size="1363" staged="1054" compressed="1054" cabpath="arm_raspberrypi.rpi2.bootfirmware0_628844477771337a_10.0.16248.1001_none_a0e75e52b17ff84a\config.txt" hash="38F18F97595B0507B188E31AAFECF52E22135D79B7CA36866F004A6A6F325F2F"/>
+      <file name="$(runtime.bootdrive)\fixup.dat" size="6481" staged="1806" compressed="1806" cabpath="arm_raspberrypi.rpi2.bootfirmware0_628844477771337a_10.0.16248.1001_none_a0e75e52b17ff84a\fixup.dat" hash="FF910B40BE14B510B37DF5CB8A690D669B12A5F01A5216F38D15426C62A2BE6B"/>
+      <file name="$(runtime.bootdrive)\fixup_cd.dat" size="2505" staged="809" compressed="809" cabpath="arm_raspberrypi.rpi2.bootfirmware0_628844477771337a_10.0.16248.1001_none_a0e75e52b17ff84a\fixup_cd.dat" hash="85C08213C6F749BF615D29981994D3F5F0DF5388AA2293AD99E9BA6770ABCD7C"/>
+      <file name="$(runtime.bootdrive)\fixup_x.dat" size="9724" staged="2955" compressed="2955" cabpath="arm_raspberrypi.rpi2.bootfirmware0_628844477771337a_10.0.16248.1001_none_a0e75e52b17ff84a\fixup_x.dat" hash="44A1718E21DF1849421FC579A1528C6E2146E833001B995352E4551F0639AD6F"/>
+      <file name="$(runtime.bootdrive)\kernel.img" size="1966080" staged="1025422" compressed="1025422" cabpath="arm_raspberrypi.rpi2.bootfirmware0_628844477771337a_10.0.16248.1001_none_a0e75e52b17ff84a\kernel.img" hash="E514FAE385D8D4E48B025F1E3058C68923122F396F868BDB9CF8E95D76A098CA"/>
+      <file name="$(runtime.bootdrive)\LICENCE.broadcom" size="1476" staged="1096" compressed="1096" cabpath="arm_raspberrypi.rpi2.bootfirmware0_628844477771337a_10.0.16248.1001_none_a0e75e52b17ff84a\LICENCE.broadcom" hash="F3DED7F5F148AB1717C66719296686F4BBB29946F372630E217E63EF974AF88D"/>
+      <file name="$(runtime.bootdrive)\start.elf" size="2739672" staged="1922889" compressed="1922889" cabpath="arm_raspberrypi.rpi2.bootfirmware0_628844477771337a_10.0.16248.1001_none_a0e75e52b17ff84a\start.elf" hash="FDC00B41D461AE0B0DC5BC023BF58D87F6B850E6CE1B6AC5348CE4DED7BBEFCF"/>
+      <file name="$(runtime.bootdrive)\start_cd.elf" size="612472" staged="429385" compressed="429385" cabpath="arm_raspberrypi.rpi2.bootfirmware0_628844477771337a_10.0.16248.1001_none_a0e75e52b17ff84a\start_cd.elf" hash="139E463F97935DC6F1962359EDC8E8C542D15A5398294E7757E494EA11DA7BE4"/>
+      <file name="$(runtime.bootdrive)\start_x.elf" size="3840328" staged="2593732" compressed="2593732" cabpath="arm_raspberrypi.rpi2.bootfirmware0_628844477771337a_10.0.16248.1001_none_a0e75e52b17ff84a\start_x.elf" hash="3831B312E3FA7F0C6EEB089AA16A3EA471F5216CEB5A169338FA3B175E24144F"/>
+      <file name="arm_raspberrypi.rpi2.bootfirmware0_628844477771337a_10.0.16248.1001_none_a0e75e52b17ff84a.manifest" size="7391" staged="7391" compressed="7391" cabpath="arm_raspberrypi.rpi2.bootfirmware0_628844477771337a_10.0.16248.1001_none_a0e75e52b17ff84a.manifest"/>
+      <file name="arm_raspberrypi.rpi2.bootfirmware.deployment_628844477771337a_10.0.16248.1001_none_516c6974e8078e3f.manifest" size="665" staged="665" compressed="665" cabpath="arm_raspberrypi.rpi2.bootfirmware.deployment_628844477771337a_10.0.16248.1001_none_516c6974e8078e3f.manifest"/>
+    </customInformation>
+    <update name="RASPBERRYPI_RPi2_BootFirmware">
+      <component>
+        <assemblyIdentity name="RASPBERRYPI.RPi2.BootFirmware.Deployment" version="10.0.16248.1001" processorArchitecture="arm" language="neutral" publicKeyToken="628844477771337a" versionScope="nonSxS" />
+      </component>
+    </update>
+  </package>
+</assembly>

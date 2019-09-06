@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v3">
+  <assemblyIdentity name="Microsoft-IoTUAP-RPi2-BCD-Package" version="10.0.17763.107" processorArchitecture="arm" language="neutral" publicKeyToken="31bf3856ad364e35" buildType="release" />
+  <package identifier="Microsoft-IoTUAP-RPi2-BCD-Package" releaseType="Feature Pack" binaryPartition="false" targetPartition="EFIESP">
+    <customInformation>
+      <phoneInformation phoneRelease="Production" phoneOwner="Microsoft" phoneOwnerType="Microsoft" phoneComponent="IoTUAP.RPi2.BCD" phoneSubComponent="" phoneGroupingKey="" />
+      <file name="update.mum" size="817" staged="639" compressed="639" sourcePackage="" cabpath="update.mum" />
+      <file name="$(runtime.system32)\catroot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\update.cat" size="981" staged="748" compressed="748" sourcePackage="" cabpath="update.cat" />
+      <file name="arm_microsoft-iotuap-rpi2-bcd-deployment_31bf3856ad364e35_10.0.17763.107_none_3a7fe4c349ae21f5.manifest" size="825" staged="623" compressed="623" sourcePackage="Microsoft-IoTUAP-RPi2-BCD-Package" cabpath="arm_microsoft-iotuap-rpi2-bcd-deployment_31bf3856ad364e35_10.0.17763.107_none_3a7fe4c349ae21f5.manifest" />
+      <file name="arm_microsoft-iotuap-rpi2-bcd_31bf3856ad364e35_10.0.17763.107_none_b78425dab8e57f8b.manifest" size="17392" staged="4026" compressed="4026" sourcePackage="Microsoft-IoTUAP-RPi2-BCD-Package" cabpath="arm_microsoft-iotuap-rpi2-bcd_31bf3856ad364e35_10.0.17763.107_none_b78425dab8e57f8b.manifest" />
+    </customInformation>
+    <update name="10ead1be932d22e6b8d1b62d4e28782a">
+      <component>
+        <assemblyIdentity name="Microsoft-IoTUAP-RPi2-BCD-Deployment" version="10.0.17763.107" processorArchitecture="arm" language="neutral" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+  </package>
+</assembly>

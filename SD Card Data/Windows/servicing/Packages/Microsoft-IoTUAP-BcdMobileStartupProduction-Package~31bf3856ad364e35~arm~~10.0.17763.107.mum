@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v3">
+  <assemblyIdentity name="Microsoft-IoTUAP-BcdMobileStartupProduction-Package" version="10.0.17763.107" processorArchitecture="arm" language="neutral" publicKeyToken="31bf3856ad364e35" buildType="release" />
+  <package identifier="Microsoft-IoTUAP-BcdMobileStartupProduction-Package" releaseType="Feature Pack" binaryPartition="false" targetPartition="EFIESP">
+    <customInformation>
+      <phoneInformation phoneRelease="Production" phoneOwner="Microsoft" phoneOwnerType="Microsoft" phoneComponent="IoTUAP.BcdMobileStartupProduction" phoneSubComponent="" phoneGroupingKey="" />
+      <file name="update.mum" size="871" staged="653" compressed="653" sourcePackage="" cabpath="update.mum" />
+      <file name="$(runtime.system32)\catroot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\update.cat" size="1020" staged="787" compressed="787" sourcePackage="" cabpath="update.cat" />
+      <file name="arm_microsoft-iotuap-bc..oduction-deployment_31bf3856ad364e35_10.0.17763.107_none_3575fc12c7dfd9df.manifest" size="861" staged="633" compressed="633" sourcePackage="Microsoft-IoTUAP-BcdMobileStartupProduction-Package" cabpath="arm_microsoft-iotuap-bc..oduction-deployment_31bf3856ad364e35_10.0.17763.107_none_3575fc12c7dfd9df.manifest" />
+      <file name="arm_microsoft-iotuap-bc..lestartupproduction_31bf3856ad364e35_10.0.17763.107_none_ae7dff3de5975389.manifest" size="1820" staged="743" compressed="743" sourcePackage="Microsoft-IoTUAP-BcdMobileStartupProduction-Package" cabpath="arm_microsoft-iotuap-bc..lestartupproduction_31bf3856ad364e35_10.0.17763.107_none_ae7dff3de5975389.manifest" />
+    </customInformation>
+    <update name="06056f4f59aeecc82088b0d88e3c327e">
+      <component>
+        <assemblyIdentity name="Microsoft-IoTUAP-BcdMobileStartupProduction-Deployment" version="10.0.17763.107" processorArchitecture="arm" language="neutral" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+  </package>
+</assembly>
